@@ -1,4 +1,25 @@
+# 
+
+# <h1 align = "center"> Kombucha Girl
+
+<div align="center">
+
+![Preview]()
+</div>
+
+##### <h4 align = "center">  React Fundamentals, Indepedent Project for Epicodus, 09.11.2020
+
+#### <h4 align = "center"> By _**Christine Augustine**_
+
+
+## Description
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Setup/Installation Requirements
+
 
 ## Available Scripts
 
@@ -37,32 +58,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Known Bugs
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* n/a
 
-### Code Splitting
+## Support and contact details
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* Christine Augustine
 
-### Analyzing the Bundle Size
+## Technologies Used
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* React
+* Javascript
+* Webpack
+* Node.js
+* HTML & CSS
+* Bootstrap 4
 
-### Making a Progressive Web App
+### License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Copyright (c) 2020 **_Christine Augustine_**
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This software is licensed under the MIT license.
