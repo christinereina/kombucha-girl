@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Preview]()
+![Preview](preview.png)
 </div>
 
 ##### <h4 align = "center">  React Fundamentals, Indepedent Project for Epicodus, 09.11.2020
