@@ -3,6 +3,7 @@ import NewKombuchaForm from './NewKombuchaForm';
 import KombuchaList from './KombuchaList';
 import KombuchaDetails from './KombuchaDetails';
 import EditKombucha from './EditKombucha';
+import { render } from '@testing-library/react';
 
 
 class KombuchaControl extends React.Component {
@@ -46,10 +47,12 @@ handleChangingSelectedKombucha = (id) => {
 
 handleDeletingKombucha = (id) => {
   const newKombuchaList = this.state.kombuchaList.filter(kombucha => kombucha.id === id)[0];
-  this.setState({selectedKombucha: selectedKombuchaInList});
+  this.setState({
+    kombuchaList: newKombuchaList,
+    selectedKombucha: null});
 }
 
-handleDeletingKombucha = (id) => {
+handleEditingKombucha = (id) => {
   const newKombuchaList = this.state.kombuchaList
     .filter(kombucha => kombucha.id !== this.state.selectedKombucha.id)
     .concat(kombuchaToEdit);
@@ -59,5 +62,37 @@ handleDeletingKombucha = (id) => {
     selectedKombucha: null
   });
 }
+
+handleKombuchaClick = (id) => {
+  const clickedKombucha = this.state.kombuchaList.filter(kombucha => kombucha.id === id)[0].quantity--;
+  const editedKombuchaList = this.state.kombuchaList
+    .filter(kombucha => kombucha.id !== id)
+    .concat(clickedKombucha);
+  this.setState({
+    kombuchaList: editedKombuchaList,
+    editing: false,
+    selectedKombucha: null
+  });
+}
+
+render(){
+  let currentlyVisibleState = null;
+  let buttonText = null;
+
+  if(this.state.editing ) {
+    currentlyVisibleState = <EditKombucha kombucha = {this.state.selectedKombucha} onEditKombucha = {this.handleEditingKombuchaInList}/>
+    buttonText ="See All Kombucha";
+  } else {
+    currentlyVisibleState = <KombuchaList kombuchaList={this.state.kombuchaList} onKombuchaSelection={this.handleChangingSelectedKombucha} />;
+    buttonText = "add kombucha";
+  }
+  return (
+    <React.Fragment>
+      {currentlyVisibleState}
+      <button onClick={this.handleClick}>{buttonText}</button>
+    </React.Fragment>
+  );
+}
+
 
 export default KombuchaControl;
