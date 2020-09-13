@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 
 function KombuchaDetails(props){
   return (
@@ -9,4 +11,4 @@ function KombuchaDetails(props){
   );
 }
 
-export default KombuchaDetail;
+export default KombuchaDetails;
