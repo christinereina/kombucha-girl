@@ -6,9 +6,8 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <Container>
         <Header />
-      </Container>
+        <KombuchaControl />
     </React.Fragment>
   );
 }
