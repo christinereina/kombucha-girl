@@ -11,6 +11,7 @@ function KombuchaDetails(props){
       <h2>{kombucha.brand}</h2>
       <h2>{kombucha.price}</h2>
       <h2>{kombucha.flavor}</h2>
+      <h2>{kombucha.quantity}</h2>
       <button onClick={() => onClickingPurchase(kombucha.id)}>Purchase</button>
       <button onClick={ props.onClickingEdit }>Edit</button>
       <button onClick={() => onClickingDelete(kombucha.id)}>Delete</button>

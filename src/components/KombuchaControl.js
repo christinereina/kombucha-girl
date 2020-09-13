@@ -66,17 +66,17 @@ class KombuchaControl extends React.Component {
     });
   }
 
-  // handleKombuchaPurchaseClick = (id) => {
-  //   const purchaseKombucha = this.state.masterKombuchaList.filter(kombucha => kombucha.id === id)[0].quantity--;
-  //   const editedKombucha = this.state.masterKombuchaList
-  //     .filter(kombucha => kombucha.id !== id)
-  //     .concat(purchaseKombucha);
-  //   this.setState({
-  //     masterKombuchaList: masterKombuchaList,
-  //     editing: false,
-  //     selectedKombucha: null
-  //   });
-  // }
+  handleKombuchaPurchaseClick = (id) => {
+    const purchaseKombucha = this.state.masterKombuchaList.filter(kombucha => kombucha.id === id)[0].quantity--;
+    const editedKombuchaList = this.state.masterKombuchaList
+      .filter(kombucha => kombucha.id !== id)
+      .concat(purchaseKombucha);
+    this.setState({
+      masterKombuchaList: editedKombuchaList,
+      editing: false,
+      selectedKombucha: null
+    });
+  }
 
   render() {
     let currentlyVisibleState = null;

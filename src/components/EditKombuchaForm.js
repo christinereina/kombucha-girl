@@ -7,7 +7,7 @@ function EditKombuchaForm(props){
 
   function handleEditKombuchaFormSubmission(event) {
     event.preventDefault();
-    props.onEditKombucha({name: event.target.name.value, brand: event.target.brand.value, price: event.target.price.value, flavor: event.target.flavor.value, id: kombucha.id});
+    props.onEditKombucha({name: event.target.name.value, brand: event.target.brand.value, price: event.target.price.value, flavor: event.target.flavor.value, quantity: event.target.quantity.value, id: kombucha.id});
   }
 
   return (
