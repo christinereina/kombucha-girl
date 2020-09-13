@@ -20,9 +20,9 @@ function KombuchaList(props){
   );
 }
 
-KombuchaList.propTypes = {
-  kombuchaList: PropTypes.array,
-  onKombuchaSelection: PropTypes.func
-};
+ KombuchaList.propTypes = {
+    kombuchaList: PropTypes.array,
+    onKombuchaSelection: PropTypes.func
+  };
 
 export default KombuchaList;
