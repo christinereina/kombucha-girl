@@ -1,8 +1,19 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Header(){
   return (
-    <h1 className="header">Kombucha Girl</h1>
+  <React.Fragment>
+    <Container>
+      <Row>
+      <Col md={{ span: 6, offset: 4 }}>
+        <h1 className="header">Kombucha Girl</h1>
+      </Col>  
+      </Row>
+    </Container>    
+    </React.Fragment>    
   );
 }
 

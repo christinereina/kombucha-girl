@@ -3,6 +3,7 @@ import NewKombuchaForm from './NewKombuchaForm';
 import KombuchaList from './KombuchaList';
 import KombuchaDetails from './KombuchaDetails';
 import EditKombuchaForm from './EditKombuchaForm';
+import Button from 'react-bootstrap/Button';
 
 
 class KombuchaControl extends React.Component {
@@ -78,7 +79,7 @@ class KombuchaControl extends React.Component {
     });
   }
 
-  render() {
+  render() {     
     let currentlyVisibleState = null;
     let buttonText = null;
 
@@ -98,7 +99,7 @@ class KombuchaControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <Button variant='info' onClick={this.handleClick}>{buttonText}</Button>
       </React.Fragment>
     );
   }
