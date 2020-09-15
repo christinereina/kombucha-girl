@@ -6,8 +6,8 @@ function Kombucha(props){
   return (
     <React.Fragment>
     <div onClick ={() => props.whenKombuchaClicked(props.id)}>
-      <h1>{props.name}</h1>
-      <h3>{props.quantity}</h3>
+      <h1 style={{color: "pink"}}>{props.name}</h1>
+      <h3> Available Litre(s): {props.quantity}</h3>
       <hr/>
     </div>
     </React.Fragment>
