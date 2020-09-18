@@ -19,7 +19,7 @@ Kombucha.propTypes = {
   brand: PropTypes.string,
   price: PropTypes.string,
   flavor: PropTypes.string,
-  quantity: PropTypes.string,
+  quantity: PropTypes.number,
   id: PropTypes.string,
   whenKombuchaClicked: PropTypes.func
 };
