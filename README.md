@@ -18,9 +18,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setup/Installation Requirements
-
-
 Welcome to Kombucha Girl, the world's greatest kombucha shop!
 
 You are able to :
