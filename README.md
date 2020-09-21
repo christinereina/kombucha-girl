@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Preview](https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1#G12UqG2guscz4W2bQf4uIv5-nZPI7o_08k)
+![Preview](kb.png)
 </div>
 
 ##### <h4 align = "center">  React Fundamentals, Indepedent Project for Epicodus, 09.11.2020
