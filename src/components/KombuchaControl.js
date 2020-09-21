@@ -69,7 +69,7 @@ class KombuchaControl extends React.Component {
 
   handleKombuchaPurchaseClick = (id) => {
     const purchaseKombucha = this.state.masterKombuchaList.filter(kombucha => kombucha.id === id)[0];
-    if (purchaseKombucha.quantity !== 0) {
+    if (purchaseKombucha.quantity != 0) {
       purchaseKombucha.quantity--;
     }
     const editedKombuchaList = this.state.masterKombuchaList
