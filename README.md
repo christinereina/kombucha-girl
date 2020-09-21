@@ -21,6 +21,29 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Setup/Installation Requirements
 
 
+Welcome to Kombucha Girl, the world's greatest kombucha shop!
+
+You are able to :
+* **Create** new Kombucha - *brand, price, flavor, price and quanity*
+* **Read** the list of available Kombucha(s)
+* **Update/Edit** the list of available Kombucha(s)
+* **Delete** Kombucha(s)
+* **Purchase** a Litre of Kombucha - site will show a counter that reflects the accurate amt of Litres available
+
+## Setup/Installation Requirements
+
+### Start off with cloning this [repository](https://github.com/christinereina/kombucha-girl) from GitHub. Run the following commands in the terminal
+```
+cd desktop
+git clone https://github.com/christinereina/kombucha-girl
+cd kombucha-girl
+npm install
+npm run start
+```
+Navigate to  http://localhost:3000/ in your browser to view project
+
+*Enjoy!*
+
 ## Available Scripts
 
 In the project directory, you can run:
